@@ -5,8 +5,8 @@ const fs = require('fs');
 const content = require('./content.json');
 
 let endpoint = "https://api.cognitive.microsofttranslator.com";
-let key = "<your-translator-key>";
-let location = "<YOUR-RESOURCE-LOCATION>";
+let key = "0b322d0de71f4eb995e3883f0b041172";
+let location = "centralus";
 
 let resultsFile = "translations.json";
 fs.writeFileSync(resultsFile, '[');
@@ -23,8 +23,8 @@ content.forEach((piece) => axios({
         },
         params: {
             'api-version': '3.0',
-            'from': 'en',
-            'to': ['fr', 'es']
+            'from': 'en-US',
+            'to': ['fr-CA', 'es-MX']
         },
         data: [piece],
         responseType: 'json'
@@ -32,7 +32,7 @@ content.forEach((piece) => axios({
         const results = [
             {
                 text: piece.text,
-                from: 'en',
+                from: 'en-US',
             },
             ...response.data[0].translations,
         ];
