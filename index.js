@@ -5,8 +5,8 @@ const fs = require('fs');
 const content = require('./content.json');
 
 let endpoint = "https://api.cognitive.microsofttranslator.com";
-let key = "0b322d0de71f4eb995e3883f0b041172";
-let location = "centralus";
+let key = "<ms-translator-app-key>";
+let location = "<region>";
 
 let resultsFile = "translations.json";
 fs.writeFileSync(resultsFile, '[');
