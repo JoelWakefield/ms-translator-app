@@ -8,7 +8,7 @@ let endpoint = "https://api.cognitive.microsofttranslator.com";
 let key = "<ms-translator-app-key>";
 let location = "<region>";
 
-let resultsFile = "translations.json";
+let resultsFile = "ms-translations.json";
 fs.writeFileSync(resultsFile, '[');
 
 content.forEach((piece) => axios({

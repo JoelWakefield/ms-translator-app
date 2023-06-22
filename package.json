@@ -1,8 +1,8 @@
 {
-  "name": "ms-translator-app",
+  "name": "translator-app",
   "version": "1.0.0",
-  "description": "demo app to compare against ChatGPT",
-  "main": "index.js",
+  "description": "demo app to compare Microsoft Translation Services against ChatGPT",
+  "main": "ms-index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^1.4.0",
+    "openai": "^3.3.0",
     "uuid": "^9.0.0"
   }
 }
