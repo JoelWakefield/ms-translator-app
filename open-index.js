@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const content = require('./content.json');
 
-const key = "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";
+const key = "<OPENAI-KEY>";
 
 let resultsFile = "open-translations.json";
 fs.writeFileSync(resultsFile, '[');
